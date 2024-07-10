@@ -1,0 +1,46 @@
+.sidebar{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color:white;
+    color:black;
+
+    .bg{
+        position:fixed;
+        top:0;
+        bottom:0;
+        left: 0;
+        width:300px;
+        background-color:white;
+    }
+    .links{
+        display:flex;
+        position:absolute;
+        width:100%;
+        height:100%;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+
+        a{
+            font-size:30px;
+            text-decoration: none;
+            color:black;
+            margin-top:20px;
+            transition:all 0.5 ease
+        }
+      
+    }
+}
+button{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    position:fixed;
+    top:25px;
+    left:25px;
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+}
