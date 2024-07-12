@@ -13,8 +13,10 @@
         left: 0;
         width:300px;
         background-color:white;
+        z-index:3;
     }
     .links{
+      
         display:flex;
         position:absolute;
         width:100%;
@@ -24,6 +26,7 @@
         justify-content:center;
 
         a{
+            z-index:4;
             font-size:30px;
             text-decoration: none;
             color:black;
@@ -32,15 +35,16 @@
         }
       
     }
-}
-button{
-    height:50px;
-    width:50px;
-    border-radius:50%;
-    position:fixed;
-    top:25px;
-    left:25px;
-    border:none;
-    background-color:transparent;
-    cursor:pointer;
+    button{
+        z-index:44;
+        height:50px;
+        width:50px;
+        border-radius:50%;
+        position:fixed;
+        top:25px;
+        left:25px;
+        border:none;
+        background-color:transparent;
+        cursor:pointer;
+    }
 }

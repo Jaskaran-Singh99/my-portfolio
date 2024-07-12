@@ -20,8 +20,10 @@
         display: flex;
         gap:15px;
 
-        img{
-            width:35px;
+        svg{
+            font-size:25px;
+            margin-right:10px;
+            cursor: pointer;
         }
     }
 }
