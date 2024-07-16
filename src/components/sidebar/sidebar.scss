@@ -5,6 +5,7 @@
     justify-content:center;
     background-color:white;
     color:black;
+    z-index: 99;
 
     .bg{
         position:fixed;
@@ -36,7 +37,7 @@
       
     }
     button{
-        z-index:44;
+        z-index:4400000;
         height:50px;
         width:50px;
         border-radius:50%;

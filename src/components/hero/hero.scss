@@ -13,7 +13,7 @@
 }
 
 .wrapper{
-    max-width:1366px;
+    // max-width:1366px;
     height:100%;
     margin:auto;
 }
@@ -23,7 +23,7 @@
     display:flex;
     flex-direction:column;
     justify-content: center;
-    gap:20px;
+    gap:10px;
 
     h2{
         font-size:20px;
@@ -39,28 +39,37 @@
         margin-left:50px;
     }
 
-    .buttons{
-        button{
-            padding:20px;
-            border:1px solid white;
-            border-radius:10px;
-            background-color:transparent;
-            color:white;
-            margin:20px;
-            cursor:pointer;
-            font-weight:300;
-        }
+}
+.buttons{
+    button{
+        padding:15px 20px;
+        border:1px solid white;
+        border-radius:10px;
+        background-color:transparent;
+        color:white;
+        margin:20px;
+        
+        cursor: pointer;
+        transition:all 0.8s ease;
+        font-weight:300;
+
     }
+    button:hover{
+        background-color: white;
+        color:#0c0c1d;
+    }
+   
 }
 
 .slidingImage{
-    font-size:25vw;
+    font-size:200px;
     position:absolute;
-    bottom:-80px;
-    color: #ffffff13;
+    bottom:-40px;
+    color: #ffffff08;
     white-space:nowrap;
     word-spacing:30px;
-    width:100%;
+    width: 100%;
     font-weight:bold;
+    // z-index: -1;
 }
 

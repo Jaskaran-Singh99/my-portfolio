@@ -51,7 +51,7 @@ export const Hero = () => {
   
       x:0,
       transition:{
-        duration:20,
+        duration:25,
         repeat:Infinity,
         repeatType:'mirror',
        
@@ -66,8 +66,8 @@ export const Hero = () => {
             <motion.h2 variants={variants}>Jaskaran Singh</motion.h2>
             <motion.h1 variants={variants}> Web Developer</motion.h1>
             <motion.div className="buttons" variants={variants}>
-                <button>Projects</button>
-                <button>Contact Me</button>
+                <motion.button >Projects</motion.button>
+                <motion.button >Contact</motion.button>
                 
             </motion.div>
             <motion.img src='/scroll.png'  variants={scrollAnimation}></motion.img>

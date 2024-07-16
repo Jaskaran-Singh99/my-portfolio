@@ -24,6 +24,10 @@
             font-size:25px;
             margin-right:10px;
             cursor: pointer;
+            transition: all 0.7s ease;
+        }
+        svg:hover{
+            color:#ff002ffb ;
         }
     }
 }
