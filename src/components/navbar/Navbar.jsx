@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import  Sidebar  from './sidebar/Sidebar'
+import  Sidebar  from '../sidebar/Sidebar'
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import './navbar.scss'

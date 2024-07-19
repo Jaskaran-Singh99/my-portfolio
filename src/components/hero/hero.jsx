@@ -66,8 +66,8 @@ export const Hero = () => {
             <motion.h2 variants={variants}>Jaskaran Singh</motion.h2>
             <motion.h1 variants={variants}> Web Developer</motion.h1>
             <motion.div className="buttons" variants={variants}>
-                <motion.button >Projects</motion.button>
-                <motion.button >Contact</motion.button>
+                <motion.button className='button'>Projects</motion.button>
+                <motion.button className='button'>Contact</motion.button>
                 
             </motion.div>
             <motion.img src='/scroll.png'  variants={scrollAnimation}></motion.img>

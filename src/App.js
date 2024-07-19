@@ -1,8 +1,9 @@
 import './App.css';
 import './app.scss'
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 import { Hero } from './components/hero/hero';
 import { Parallax } from './components/parallax/Parallax';
+import  Projects  from './components/projects/Projects';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <Hero></Hero>
         </section>
        
-       <section id="Projects"> <Parallax></Parallax></section>
+       <section> <Parallax></Parallax></section>
+       <Projects id="Projects"></Projects>
        <section id="Contact">Hello</section>
        <section id="Resume">Hello</section>
 
