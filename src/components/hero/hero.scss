@@ -1,21 +1,41 @@
+@import "../../app.scss";
 .hero{
     height:calc(100vh - 100px);
     background:linear-gradient(180deg, #0c0c1d, #212152);
     position:relative;
     overflow:hidden;
+
+    @include mobile{
+        height: 100vh;
+    }
   
 }
+
 .imageContainer img{
     position:absolute;
     height:100%;
     top:0;
-    right:0
+    right:0;
+
+  
+
+   
+}
+.myimage{
+    @include mobile{
+        display: none;
+       
+    }
 }
 
 .wrapper{
     // max-width:1366px;
     height:100%;
     margin:auto;
+
+    @include mobile{
+        width: 100%;
+    }
 }
 
 .textContainer{
@@ -25,6 +45,13 @@
     justify-content: center;
     gap:10px;
 
+    @include mobile{
+        width: 100%;
+        height: 60%;
+        text-align: center;
+        align-items: center;
+
+    }
     h2{
         font-size:20px;
         color:#fe0432;
@@ -33,33 +60,24 @@
     }
     h1{
         font-size:88px;
+        @include mobile{
+        
+            font-size:70px;
+    
+        }
     }
     img{
         width:50px;
         margin-left:50px;
+
+        @include mobile{
+            margin-left:0px;
+        }
+
+        
     }
 
 }
-// .buttons{
-//     button{
-//         padding:15px 20px;
-//         border:1px solid white;
-//         border-radius:10px;
-//         background-color:transparent;
-//         color:white;
-//         margin:20px;
-        
-//         cursor: pointer;
-//         transition:all 0.8s ease;
-//         font-weight:300;
-
-//     }
-//     button:hover{
-//         background-color: white;
-//         color:#0c0c1d;
-//     }
-   
-// }
 
 .slidingImage{
     font-size:200px;
@@ -71,5 +89,9 @@
     width: 100%;
     font-weight:bold;
     // z-index: -1;
+
+    @include mobile{
+        bottom:50px
+    }
 }
 

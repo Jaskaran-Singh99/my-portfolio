@@ -5,19 +5,21 @@ import { Hero } from './components/hero/hero';
 import { Parallax } from './components/parallax/Parallax';
 import  Projects  from './components/projects/Projects';
 import Contact from './components/contact/Contact';
+import Cursor from './components/cursor/Cursor';
 
 function App() {
   return (
     <div className="App">
+      <Cursor></Cursor>
        <section id='Home'>
         <Navbar></Navbar>
         <Hero></Hero>
         </section>
        
        <section> <Parallax></Parallax></section>
-       <Projects id="Projects"></Projects>
+        <div id='Projects'><Projects></Projects></div>
        <section id="Contact"><Contact></Contact></section>
-       <section id="Resume">Hello</section>
+      
 
     </div>
   );

@@ -76,7 +76,7 @@ export const Hero = () => {
           Innovative Problem Solver
         </motion.div>
         <div className="imageContainer">
-            <img src='/bg-sharp.png'></img>
+            <img src='/bg-sharp.png' className='myimage'></img>
         </div>
        </div>
     </motion.div>

@@ -7,14 +7,14 @@ const items = [
   {
     id: 1,
     title: "Zen chat",
-    img: './project1.png',
+    img: './project4.jpg',
     desc:'Zen Chat is a chat application developed using the MERN stack (MongoDB, Express.js, React, Node.js). The app supports real-time messaging, enabling instant message delivery through WebSockets for  communication',
     url:''
   },
   {
     id: 2,
     title: "Crypto Tracker",
-    img: "./project2.png",
+    img: "./project5.jpg",
     desc:'The crypto tracker app is a web application developed using React that allows users to track the prices of various cryptocurrencies in real-time. Users can view  price information and even historical data for different cryptocurrencies. The app fetches data from coingecko API,',
     url:'https://crypto-tracker-git-main-jaskaransingh99s-projects.vercel.app/'
   },
@@ -22,7 +22,7 @@ const items = [
   {
     id: 3,
     title: "IMDB Clone",
-    img: "./project3.png",
+    img: "./project6.png",
     desc: "The IMDb clone is a  project designed to replicate the core features of the IMDb. Developed using React,  we can to browse, sand view detailed information about movies and TV shows. The app has responsive  interface .",
     url:"https://imbd-clone-git-main-jaskaran-singh99.vercel.app/"
   },

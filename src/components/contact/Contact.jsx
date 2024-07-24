@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 const variants = {
   initial: {
@@ -29,21 +29,21 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // emailjs
-    //   .sendForm(
-    //     "service_94y20xo",
-    //     "template_v10u2oh",
-    //     formRef.current,
-    //     "pX_2hasGmGcuvjXIW"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       setSuccess(true)
-    //     },
-    //     (error) => {
-    //       setError(true);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        "service_r1xf0of",
+        "template_kq3atzy",
+        formRef.current,
+        "ZuKNFLLk_-QsWlT2a"
+      )
+      .then(
+        (result) => {
+          setSuccess(true)
+        },
+        (error) => {
+          setError(true);
+        }
+      );
   };
 
   return (
@@ -60,10 +60,7 @@ const Contact = () => {
           <h2>Email</h2>
           <span>0805jaskaran@gmail.com</span>
         </motion.div>
-        {/* <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>Hello street New York</span>
-        </motion.div> */}
+      
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
           <span>+1 289 623 3141</span>
@@ -74,9 +71,9 @@ const Contact = () => {
           className="phoneSvg"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
-          transition={{ delay: 3, duration: 1 }}
+          transition={{ delay: 1.5, duration: 1 }}
         >
-          <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+          <svg width="350px" height="450px" viewBox="0 0 32.666 32.666">
             <motion.path
               strokeWidth={0.2}
               fill="none"
@@ -104,7 +101,7 @@ const Contact = () => {
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 1 }}
+          transition={{ delay: 2, duration: 1 }}
         >
           <input type="text" required placeholder="Name" name="name"/>
           <input type="email" required placeholder="Email" name="email"/>

@@ -1,4 +1,4 @@
-// @import "../../app.scss";
+@import "../../app.scss";
 
 .parallax {
   width: 100%;
@@ -12,10 +12,10 @@
   h1 {
     font-size: 100px;
 
-    // @include mobile {
-    //   font-size: 72px;
-    //   text-align: center;
-    // }
+    @include mobile {
+      font-size: 72px;
+      text-align: center;
+    }
   }
 
   .mountains {

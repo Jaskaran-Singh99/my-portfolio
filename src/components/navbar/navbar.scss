@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .navbar{
     height:100px;
     
@@ -5,26 +7,47 @@
 
 .wrapper{
     display:flex;
-    max-width:1300px;
+    
     height:100%;
-    // margin-top:10px;
+    margin-top:10px;
     margin:0px 10px;
     align-items:center;
     justify-content:space-around;
+
+    @include mobile{
+        justify-content: flex-end;
+       display: block;
+    }
+    
+   
+    .logo{
+        width: 100px;;
+       
+    }
     
     span{
         font-weight:bold;
+        @include mobile{
+            display: none;
+            
+        }
     }
 
     .social{
         display: flex;
         gap:15px;
+       
+        @include mobile{
+            justify-content:flex-end;
+            margin-top:40px;
+        }
 
         svg{
             font-size:25px;
             margin-right:10px;
             cursor: pointer;
             transition: all 0.7s ease;
+            color:white;
         }
         svg:hover{
             color:#ff002ffb ;
