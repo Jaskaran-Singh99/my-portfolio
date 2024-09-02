@@ -9,7 +9,7 @@ const items = [
     title: "Zen chat",
     img: './project4.jpg',
     desc:'Zen Chat is a chat application developed using the MERN stack (MongoDB, Express.js, React, Node.js). The app supports real-time messaging, enabling instant message delivery through WebSockets for  communication',
-    url:''
+    url:'https://drive.google.com/file/d/1IHWBsW-DDbwnuRcdrTD_WRs7G_HeMJur'
   },
   {
     id: 2,
