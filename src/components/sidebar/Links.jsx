@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 export const Links = () => {
-  const items = ['Home', 'Projects', 'Contact', 'Resume']
+  const items = ['Home', 'Projects', 'Contact', ]
  
   const itemVariants = {
     open: {

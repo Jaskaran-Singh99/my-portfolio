@@ -3,16 +3,40 @@ import { useRef } from "react";
 import "./projects.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
+
+// Freelance Web Developer (Fiverr) — Remote
+// Jan 2020 – Dec 2020  
+// • Delivered 8+ custom websites and web components to clients worldwide on Fiverr  
+// • Communicated directly with clients to gather requirements, deliver updates, and manage revisions  
+// • Used HTML, CSS, JavaScript, and WordPress to complete diverse tasks efficiently  
+
 const items = [
-  {
+   {
+    
     id: 1,
+    title: "Freelance Projects",
+    img: './freelancing.png',
+    desc:' Delivered 7+ custom websites and web components to clients worldwide on Fiverr. Communicated directly with clients to gather requirements, deliver updates, and manage revisions  Used HTML, CSS, JavaScript, Wordpress and React to complete diverse tasks efficiently  ',
+    url:'https://www.fiverr.com/jk_developer?public_mode=true'
+  },
+  {
+    
+    id: 2,
+    title: "Uber Clone",
+    img: './project1.jpg',
+    desc:'Uber clone that includes secure user authentication, live google map integration for real time pickup/drop location, real time distance calculation  and Socket IO integration for ride status updates',
+    url:'https://uber-clone-frontend-24jd.onrender.com/'
+  },
+  {
+
+    id: 3,
     title: "Zen chat",
     img: './project4.jpg',
     desc:'Zen Chat is a chat application developed using the MERN stack (MongoDB, Express.js, React, Node.js). The app supports real-time messaging, enabling instant message delivery through WebSockets for  communication',
-    url:''
+    url:'https://drive.google.com/file/d/1IHWBsW-DDbwnuRcdrTD_WRs7G_HeMJur/edit'
   },
   {
-    id: 2,
+    id: 4,
     title: "Crypto Tracker",
     img: "./project5.jpg",
     desc:'The crypto tracker app is a web application developed using React that allows users to track the prices of various cryptocurrencies in real-time. Users can view  price information and even historical data for different cryptocurrencies. The app fetches data from coingecko API,',
@@ -20,10 +44,10 @@ const items = [
   },
 
   {
-    id: 3,
+    id: 5,
     title: "IMDB Clone",
     img: "./project6.png",
-    desc: "The IMDb clone is a  project designed to replicate the core features of the IMDb. Developed using React,  we can to browse, sand view detailed information about movies and TV shows. The app has responsive  interface .",
+    desc: "The IMDb clone is a  project designed to replicate the core features of the IMDb. Developed using React,  we can  browse and view detailed information about movies and TV shows. The app has responsive  interface .",
     url:"https://imbd-clone-git-main-jaskaran-singh99.vercel.app/"
   },
 ];
@@ -47,7 +71,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h3>{item.title}</h3>
             <p>{item.desc}</p>
-            <button className="button"><a href={item.url}>View Project</a></button>
+            <button className="button" ><a href={item.url}>View Project</a></button>
           </motion.div>
         </div>
       </div>

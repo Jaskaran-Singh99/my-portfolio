@@ -6,6 +6,7 @@ import { Parallax } from './components/parallax/Parallax';
 import  Projects  from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Cursor from './components/cursor/Cursor';
+import { About } from './components/about/About';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         </section>
        
        <section> <Parallax></Parallax></section>
+       {/* <section id="About"><About></About></section> */}
         <div id='Projects'><Projects></Projects></div>
        <section id="Contact"><Contact></Contact></section>
       
